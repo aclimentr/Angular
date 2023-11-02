@@ -1,0 +1,12 @@
+<h2>Listado de clientes</h2>
+
+<ul>    
+    
+    <!-- ngFor es una directiva que nos permite iterar sobre los elementos de un array
+    en este caso nos va a permitir crear un listado  -->
+    <li *ngFor="let customer of customers">
+        {{customer.fullname}} {{customer.email}} {{customer.phone}}    
+    </li>
+
+
+</ul>

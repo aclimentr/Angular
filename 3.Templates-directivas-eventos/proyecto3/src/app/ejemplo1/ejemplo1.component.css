@@ -1,0 +1,15 @@
+/* reglas de estilo para definir las clases de estilo, red, green y blue.
+Estas clases se pueden aplicar a elementos html */
+
+.red{
+    background-color: red;
+    color: white;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
