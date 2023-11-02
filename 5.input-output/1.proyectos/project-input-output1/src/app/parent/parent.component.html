@@ -1,0 +1,6 @@
+<div>
+
+    <h2> Lista de nombres </h2>
+    <app-child *ngFor="let name of names" [name]="name" (nameSelected)="onNameSelected($event)"></app-child>
+    <p *ngIf="selectedName"> Nombre seleccionado: {{selectedName}}</p>
+</div>

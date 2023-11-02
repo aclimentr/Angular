@@ -1,0 +1,14 @@
+<p>add-chuche works!</p>
+
+<div>
+    <p>Introduce nombre:</p><input type="text" placeholder="Nombre" #name>
+    <p>Introduce precio:</p><input type="number" placeholder="Precio" #price>
+    <p>Introduce categoría:</p><input type="text" placeholder="Categoria" #cathegory>
+    <p>Introduce color:</p><input type="text" placeholder="Color" #color>
+    <p>Introduce imagen:</p><input type="text" placeholder="Imagen" #image>
+
+    <button (click)="addChucheria({name: name.value, price: toNumber(price.value),
+        cathegory: cathegory.value, color: color.value, image: image.value})">
+    Add
+    </button>
+</div>

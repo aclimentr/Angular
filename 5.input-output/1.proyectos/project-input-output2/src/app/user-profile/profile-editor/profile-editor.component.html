@@ -1,0 +1,12 @@
+
+<!-- para condicionar si se muestra el contenido del formulario solo
+si el profile es distinto a null o undefined -->
+<div *ngIf="profile">
+
+    <label>Nombre: <input [(ngModel)]="profile.firtsName"> </label>
+    <label>Apellido: <input [(ngModel)]="profile.lastName"> </label>
+    <label>Correo electrónico: <input [(ngModel)]="profile.email"> </label>
+
+    <button (click)="updatedProfile()"> Actualizar </button>
+
+</div>
